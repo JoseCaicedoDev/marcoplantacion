@@ -4,10 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/index.js"></script>
     <title>Calculadora Marco Plantación</title>
   </head>
   <body>
-    <h1>Hola</h1>
+    <h1>Marco de Plantación</h1>
+    <form action="">
+      <label for="surface">Superficie</label>
+      <input
+        type="number"
+        id="surface"
+        placeholder="metros cuadrados - m²"
+        required
+      /><br />
+      <label for="distancePlant">Distancia entre plantas</label>
+      <input
+        type="number"
+        id="distancePlant"
+        placeholder="metros"
+        required
+      /><br />
+      <button type="button" onclick="calculate()">Calcular</button>
+    </form>
+    <p>Numero de Plantas</p>
+    <p id="results"></p>
+    <script src="js/index.js"></script>
   </body>
 </html>
