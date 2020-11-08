@@ -8,25 +8,65 @@
   </head>
   <body>
     <h1>Marco de Plantación</h1>
-    <form action="">
-      <label for="surface">Superficie</label>
-      <input
-        type="number"
-        id="surface"
-        placeholder="metros cuadrados - m²"
-        required
-      /><br />
-      <label for="distancePlant">Distancia entre plantas</label>
-      <input
-        type="number"
-        id="distancePlant"
-        placeholder="metros"
-        required
-      /><br />
-      <button type="button" onclick="calculate()">Calcular</button>
-    </form>
-    <p>Numero de Plantas</p>
-    <p id="results"></p>
+    <div>
+      <h3>Cálculo de siembra Tresbolillo</h3>
+      <img
+        src="http://www.centroaceros.com/wp-content/uploads/2020/08/plantacion-banano.png"
+        alt=""
+        width="40%"
+      />
+      <p>
+        Nº de Plantas = Superficie (m²) ⁄ (distancia ente plantas (m) x Cos 30º)
+      </p>
+      <form action="">
+        <label for="surface">Superficie</label>
+        <input
+          type="number"
+          id="surface"
+          placeholder="metros cuadrados"
+          required
+        />
+        <span>m²</span><br />
+        <label for="distancePlant">Distancia entre plantas</label>
+        <input
+          type="number"
+          id="distancePlant"
+          placeholder="metros"
+          required
+        /><span>m</span><br />
+        <button type="button" onclick="calculateStaggered()">Calcular</button>
+      </form>
+      <p>Número de Plantas: <span id="results"></span></p>
+    </div>
+    <br />
+    <div>
+      <h3>Cálculo de siembra Marco Real</h3>
+      <img
+        src="http://www.centroaceros.com/wp-content/uploads/2020/08/plantacion-banano.png"
+        alt=""
+        width="40%"
+      />
+      <p>Nº de Plantas = Superficie (m²) ⁄ distancia ente plantas (m)</p>
+      <form action="">
+        <label for="surface">Superficie</label>
+        <input
+          type="number"
+          id="surface1"
+          placeholder="metros cuadrados"
+          required
+        />
+        <span>m²</span><br />
+        <label for="distancePlant">Distancia entre plantas</label>
+        <input
+          type="number"
+          id="distancePlant1"
+          placeholder="metros"
+          required
+        /><span>m</span><br />
+        <button type="button" onclick="calculateReal()">Calcular</button>
+      </form>
+      <p>Número de Plantas: <span id="results1"></span></p>
+    </div>
     <script src="js/index.js"></script>
   </body>
 </html>
