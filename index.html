@@ -38,9 +38,10 @@
       </form>
       <p>Número de Plantas: <span id="results"></span></p>
     </div>
+
     <br />
     <div>
-      <h3>Cálculo de siembra Marco Real</h3>
+      <h3>Cálculo de siembra Cuadrícula</h3>
       <img
         src="http://www.centroaceros.com/wp-content/uploads/2020/08/plantacion-banano.png"
         alt=""
@@ -66,6 +67,46 @@
         <button type="button" onclick="calculateReal()">Calcular</button>
       </form>
       <p>Número de Plantas: <span id="results1"></span></p>
+    </div>
+    <br />
+
+    <div>
+      <h3>Cálculo de siembra Marco Calle</h3>
+      <img
+        src="http://www.centroaceros.com/wp-content/uploads/2020/08/plantacion-banano.png"
+        alt=""
+        width="40%"
+      />
+      <p>
+        Nº de Plantas = Superficie (m²) ⁄ distancia ente plantas (m) x distancia
+        ente filas (m)
+      </p>
+      <form action="">
+        <label for="surface">Superficie</label>
+        <input
+          type="number"
+          id="surface2"
+          placeholder="metros cuadrados"
+          required
+        />
+        <span>m²</span><br />
+        <label for="distancePlant">Distancias entre filas</label>
+        <input
+          type="number"
+          id="distanceRow"
+          placeholder="metros"
+          required
+        /><span>m</span><br />
+        <label for="distancePlant">Distancias entre plantas</label>
+        <input
+          type="number"
+          id="distancePlant2"
+          placeholder="metros"
+          required
+        /><span>m</span><br />
+        <button type="button" onclick="calculateStreet()">Calcular</button>
+      </form>
+      <p>Número de Plantas: <span id="results2"></span></p>
     </div>
     <script src="js/index.js"></script>
   </body>

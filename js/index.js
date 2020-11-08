@@ -18,5 +18,16 @@ const calculateReal = () => {
   document.getElementById("results1").innerHTML = nPlant;
 };
 
+const calculateStreet = () => {
+  const surfaces = parseInt(document.getElementById("surface2").value);
+  const distanceRows = parseInt(document.getElementById("distanceRow").value);
+  const distancePlants = parseInt(
+    document.getElementById("distancePlant2").value
+  );
+  const nPlant = Math.round(surfaces / (distanceRows * distancePlants));
+  document.getElementById("results2").innerHTML = nPlant;
+};
+
+calculateStreet();
 calculateReal();
 calculateStaggered();
