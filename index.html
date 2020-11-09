@@ -3,19 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="image/favicon.png" />
+    <title>Calculadora Marco de Plantación</title>
+    <meta
+      name="description"
+      content="Marco de siembra basado en HTML, CSS, JS"
+    />
+    <meta name="Keywords" content="Portafolio, Developers, Frontend, GIS" />
+    <meta property="og:url" content="https://jose.caicedo.dev/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Calculadora de siembra ;)" />
+    <meta
+      property="og:description"
+      content="Marco de siembra basado en HTML, CSS, JS"
+    />
+    <meta property="og:image" content="image/plantacion.png" />
+
     <link rel="stylesheet" href="css/style.css" />
-    <title>Calculadora Marco Plantación</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-180860046-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-180860046-1");
+    </script>
   </head>
   <body>
     <h1>Marco de Plantación</h1>
-    <div>
+    <div class="card">
       <h3>Cálculo de siembra Tresbolillo</h3>
       <img
         src="http://www.centroaceros.com/wp-content/uploads/2020/08/plantacion-banano.png"
         alt=""
-        width="40%"
       />
-      <p>
+      <p class="card__description">
         Nº de Plantas = Superficie (m²) ⁄ (distancia ente plantas (m) x Cos 30º)
       </p>
       <form action="">
@@ -40,18 +69,18 @@
           Calcular
         </button>
       </form>
-      <p>Número de Plantas: <span id="results"></span></p>
+      <p>Número de Plantas: <span class="result" id="results"></span></p>
     </div>
 
-    <br />
-    <div>
+    <div class="card">
       <h3>Cálculo de siembra Cuadrícula</h3>
       <img
         src="http://www.centroaceros.com/wp-content/uploads/2020/08/plantacion-banano.png"
         alt=""
-        width="40%"
       />
-      <p>Nº de Plantas = Superficie (m²) ⁄ distancia ente plantas (m)</p>
+      <p class="card__description">
+        Nº de Plantas = Superficie (m²) ⁄ distancia ente plantas (m)
+      </p>
       <form action="">
         <label for="surface1">Superficie</label>
         <input
@@ -74,18 +103,16 @@
           Calcular
         </button>
       </form>
-      <p>Número de Plantas: <span id="results1"></span></p>
+      <p>Número de Plantas: <span class="result" id="results1"></span></p>
     </div>
-    <br />
 
-    <div>
+    <div class="card">
       <h3>Cálculo de siembra Marco Calle</h3>
       <img
         src="http://www.centroaceros.com/wp-content/uploads/2020/08/plantacion-banano.png"
         alt=""
-        width="40%"
       />
-      <p>
+      <p class="card__description">
         Nº de Plantas = Superficie (m²) ⁄ distancia ente plantas (m) x distancia
         ente filas (m)
       </p>
@@ -119,8 +146,14 @@
           Calcular
         </button>
       </form>
-      <p>Número de Plantas: <span id="results2"></span></p>
+      <p>Número de Plantas: <span class="result" id="results2"></span></p>
     </div>
+    <footer>
+      <p>By</p>
+      <a href="https://www.linkedin.com/in/jose-caicedo/"
+        ><img src="image/JC_negro.png" alt="logo del desarrollador"
+      /></a>
+    </footer>
     <script src="js/index.js"></script>
   </body>
 </html>
