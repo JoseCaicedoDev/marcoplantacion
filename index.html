@@ -55,11 +55,11 @@
               type="number"
               class="inputsForm"
               id="surface"
-              placeholder="metros cuadrados"
+              placeholder="Ej: 10000 m² ó 1 ha"
               required
             />
-            <select name="">
-              <option value="1" selected>m²</option>
+            <select id="units" name="" onchange="showSelected()">
+              <option value="1">m²</option>
               <option value="2">ha</option>
             </select>
           </div>
@@ -98,8 +98,8 @@
             placeholder="metros cuadrados"
             required
           />
-          <select name="">
-            <option value="1" selected>m²</option>
+          <select id="units" name="" onchange="showSelected()">
+            <option value="1">m²</option>
             <option value="2">ha</option>
           </select>
         </div>
@@ -139,7 +139,7 @@
             required
           />
           <select name="">
-            <option value="1" selected>m²</option>
+            <option value="1">m²</option>
             <option value="2">ha</option>
           </select>
         </div>
