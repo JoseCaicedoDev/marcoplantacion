@@ -1,0 +1,522 @@
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  padding: 0;
+  padding-top: 60px;
+  margin: 0;
+  /*display: inline-block;*/
+}
+
+.review-card {
+  margin: 0 auto;
+  width: 80%;
+  /*   height: 400px; */
+  /*background-color: green;*/
+}
+
+.review-card-img {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  /*background-color: red;*/
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.review-networks {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-height: 30px;
+  width: 100%;
+  background-color: #eeeeee;
+  color: var(--color-black);
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.review-networks-username {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  font-size: 16px;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.review-networks-username a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+.review-networks-icons {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.review-networks-icons a {
+  display: inline-block;
+  min-width: 20px;
+  min-height: 20px;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 22px;
+  color: var(--color-black);
+  margin-left: 5px;
+}
+.share_card {
+  font-size: 20px;
+  margin-top: 25px;
+}
+.share_card a {
+  text-decoration: none;
+  color: #eeeeee;
+  margin: 0 10px;
+}
+
+.review-card-description {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  /*   min-height: 34%; */
+  width: 100%;
+}
+.review-card-description p {
+  display: inline-block;
+  margin: 0;
+  text-align: justify;
+}
+
+.review-card-my-interests {
+  position: relative;
+  /*   min-height: 8%; */
+  width: 100%;
+}
+
+.review-card-my-interests h4 {
+  /*   margin-top: 0; */
+  font-weight: bold;
+}
+.interests-card {
+  padding: 0 1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 20px;
+  text-align: center;
+  justify-items: center;
+}
+.card-knowledge {
+  font-size: 48px;
+  color: #818181;
+}
+
+.buttons {
+  /*position: relative;*/
+  margin: 0 auto;
+  padding: 0;
+  /* width: 80%; */
+  height: 60px;
+  /*background-color: gray;*/
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.big-buttons {
+  /*background-color: var(--color-main);*/
+  height: 80%;
+  width: 45%;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.post-zone {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 20px;
+  width: 90%;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  /*align-items: center;*/
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.post-zone .card {
+  border: 1px solid #edeeee;
+  border-radius: 4px;
+  min-width: 300px;
+  margin-bottom: 3%;
+}
+
+a.btn {
+  /*   display: inline-block; */
+  text-decoration: none;
+}
+
+footer {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 10px 0px;
+  width: 100%;
+  height: 30px;
+  background-color: #e0e0e0;
+}
+
+.footer-wrapper {
+  position: relative;
+  /* width: 80%; */
+  height: 100%;
+  margin: 0 auto;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-wrapper a {
+  color: var(--color-black);
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+/*--------- Nav Bar--------*/
+
+.navbar {
+  position: fixed;
+  min-height: 60px;
+  height: 60px;
+  width: 100%;
+  background-color: white;
+  box-shadow: none;
+  border-bottom: 1px solid #edeeee;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-menu {
+  height: 100%;
+  width: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-bars {
+  font-size: 24px;
+}
+.navbar-main-logo {
+  height: 45px;
+}
+.navbar-main-logo img {
+  height: 100%;
+}
+
+.navbar-main-lang {
+  height: 100%;
+  width: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*--------- BreadCrumb--------*/
+.breadcrumb {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 80%;
+}
+
+ul.breadcrumb {
+  padding: 8px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 12px;
+}
+
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+.interest {
+  position: relative;
+  margin: 0 auto;
+  width: 85%;
+}
+.interest h2 {
+  text-align: center;
+}
+
+/* --------- Post -------- */
+.post-header {
+  position: relative;
+  overflow: hidden;
+  /*   background-color: rgba(0, 0, 0, 0.3); */
+  min-height: 200px;
+}
+
+.post-img-back {
+  position: absolute;
+  z-index: 0;
+}
+
+.post-menu {
+  position: relative;
+  height: 50px;
+  z-index: 1;
+  margin: 0 auto;
+  width: 90%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a.post-menu-arrow {
+  color: var(--color-black);
+}
+
+.post-title {
+  position: relative;
+  min-height: 100px;
+  margin: 0 auto;
+  width: 80%;
+  color: #ffffff;
+  line-height: 100px;
+}
+
+.post-title h1 {
+  display: inline-block;
+  text-shadow: -1px 0 var(--color-black), 0 1px var(--color-black),
+    1px 0 var(--color-black), 0 -1px var(--color-black);
+  margin: 0;
+}
+
+.post-title-extras {
+  position: relative;
+  min-height: 40px;
+  margin: 0 auto;
+  width: 80%;
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.post-zone-one {
+  position: relative;
+  overflow: hidden;
+  padding: 5%;
+  width: 90%;
+  background-color: white;
+}
+
+.zone-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  /*   font-size: 24px;
+  line-height: 35px; */
+}
+.zone-card img {
+  border-radius: 15px;
+}
+.zone-card p {
+  padding: 0 25px;
+  text-align: justify;
+}
+.post-zone-one p {
+  /*   font-size: 24px;
+  line-height: 35px; */
+  padding: 0 15px;
+  text-align: justify;
+  margin: 0;
+  line-height: 25px;
+}
+.zone-card img {
+  margin: 15px 0;
+}
+.post-zone-one h2 {
+  margin-top: 0;
+}
+
+.label_auxiliar2 {
+  background-color: var(--color-auxiliar2);
+}
+
+/* Menú lateral */
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1001; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: var(--color-black); /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 18px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+
+.sidenav-logo {
+  margin: 0 auto;
+  /*   text-align: center; */
+}
+
+.sidenav-footer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+}
+
+.sidenav-footer a {
+  background-color: #334654;
+}
+
+.sidenav-networks-icons {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  display: inline-block;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidenav-networks-icons a {
+  display: inline-block;
+  min-width: 20px;
+  min-height: 20px;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 22px;
+  color: #818181;
+  margin: 0 8px;
+  padding: 0;
+  background-color: var(--color-black);
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}

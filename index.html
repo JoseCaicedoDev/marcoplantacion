@@ -22,6 +22,7 @@
         <label for="surface">Superficie</label>
         <input
           type="number"
+          class="inputsForm"
           id="surface"
           placeholder="metros cuadrados"
           required
@@ -30,11 +31,14 @@
         <label for="distancePlant">Distancia entre plantas</label>
         <input
           type="number"
+          class="inputsForm"
           id="distancePlant"
           placeholder="metros"
           required
         /><span>m</span><br />
-        <button type="button" onclick="calculateStaggered()">Calcular</button>
+        <button class="btn" type="button" onclick="calculateStaggered()">
+          Calcular
+        </button>
       </form>
       <p>Número de Plantas: <span id="results"></span></p>
     </div>
@@ -49,22 +53,26 @@
       />
       <p>Nº de Plantas = Superficie (m²) ⁄ distancia ente plantas (m)</p>
       <form action="">
-        <label for="surface">Superficie</label>
+        <label for="surface1">Superficie</label>
         <input
           type="number"
+          class="inputsForm"
           id="surface1"
           placeholder="metros cuadrados"
           required
         />
         <span>m²</span><br />
-        <label for="distancePlant">Distancia entre plantas</label>
+        <label for="distancePlant1">Distancia entre plantas</label>
         <input
           type="number"
+          class="inputsForm"
           id="distancePlant1"
           placeholder="metros"
           required
         /><span>m</span><br />
-        <button type="button" onclick="calculateReal()">Calcular</button>
+        <button class="btn" type="button" onclick="calculateReal()">
+          Calcular
+        </button>
       </form>
       <p>Número de Plantas: <span id="results1"></span></p>
     </div>
@@ -82,29 +90,34 @@
         ente filas (m)
       </p>
       <form action="">
-        <label for="surface">Superficie</label>
+        <label for="surface2">Superficie</label>
         <input
           type="number"
+          class="inputsForm"
           id="surface2"
           placeholder="metros cuadrados"
           required
         />
         <span>m²</span><br />
-        <label for="distancePlant">Distancias entre filas</label>
+        <label for="distanceRow">Distancias entre filas</label>
         <input
           type="number"
+          class="inputsForm"
           id="distanceRow"
           placeholder="metros"
           required
         /><span>m</span><br />
-        <label for="distancePlant">Distancias entre plantas</label>
+        <label for="distancePlant2">Distancias entre plantas</label>
         <input
           type="number"
           id="distancePlant2"
+          class="inputsForm"
           placeholder="metros"
           required
         /><span>m</span><br />
-        <button type="button" onclick="calculateStreet()">Calcular</button>
+        <button class="btn" type="button" onclick="calculateStreet()">
+          Calcular
+        </button>
       </form>
       <p>Número de Plantas: <span id="results2"></span></p>
     </div>
