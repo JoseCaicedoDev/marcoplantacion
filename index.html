@@ -48,15 +48,22 @@
         Nº de Plantas = Superficie (m²) ⁄ (distancia ente plantas (m) x Cos 30º)
       </p>
       <form action="">
-        <label for="surface">Superficie</label>
-        <input
-          type="number"
-          class="inputsForm"
-          id="surface"
-          placeholder="metros cuadrados"
-          required
-        />
-        <span>m²</span><br />
+        <div class="description-items">
+          <label for="surface">Superficie</label>
+          <div>
+            <input
+              type="number"
+              class="inputsForm"
+              id="surface"
+              placeholder="metros cuadrados"
+              required
+            />
+            <select name="">
+              <option value="1" selected>m²</option>
+              <option value="2">ha</option>
+            </select>
+          </div>
+        </div>
         <label for="distancePlant">Distancia entre plantas</label>
         <input
           type="number"
@@ -83,14 +90,19 @@
       </p>
       <form action="">
         <label for="surface1">Superficie</label>
-        <input
-          type="number"
-          class="inputsForm"
-          id="surface1"
-          placeholder="metros cuadrados"
-          required
-        />
-        <span>m²</span><br />
+        <div class="description-items">
+          <input
+            type="number"
+            class="inputsForm"
+            id="surface"
+            placeholder="metros cuadrados"
+            required
+          />
+          <select name="">
+            <option value="1" selected>m²</option>
+            <option value="2">ha</option>
+          </select>
+        </div>
         <label for="distancePlant1">Distancia entre plantas</label>
         <input
           type="number"
@@ -118,14 +130,19 @@
       </p>
       <form action="">
         <label for="surface2">Superficie</label>
-        <input
-          type="number"
-          class="inputsForm"
-          id="surface2"
-          placeholder="metros cuadrados"
-          required
-        />
-        <span>m²</span><br />
+        <div class="description-items">
+          <input
+            type="number"
+            class="inputsForm"
+            id="surface"
+            placeholder="metros cuadrados"
+            required
+          />
+          <select name="">
+            <option value="1" selected>m²</option>
+            <option value="2">ha</option>
+          </select>
+        </div>
         <label for="distanceRow">Distancias entre filas</label>
         <input
           type="number"
