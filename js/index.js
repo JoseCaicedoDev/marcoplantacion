@@ -1,44 +1,71 @@
-const showSelected = () => {
-  const unitSelect = document.getElementById("units").value;
-  switch (unitSelect) {
-    case "":
-      return 1;
-    case "1":
-      return 1;
-    case "2":
-      return 10000;
+const calculateStaggered = (btn) => {
+  const form = document.getElementById("formCalculate_1");
+  const formData = new FormData(form);
+  let jsonData = {};
+  for (var pair of formData.entries()) {
+    jsonData[pair[0]] = pair[1];
   }
-};
 
-const calculateStaggered = () => {
-  const surfaces = parseInt(document.getElementById("surface").value);
-  const totalSurface = surfaces * showSelected();
-  const distancePlants = parseInt(
-    document.getElementById("distancePlant").value
-  );
+  console.log(jsonData);
+  const surface = parseInt(jsonData.surface);
+  const distancePlant = parseInt(jsonData.distancePlant);
+  const unit = parseInt(jsonData.unit);
+
   nPlant = Math.round(
-    totalSurface / (Math.pow(distancePlants, 2) * Math.cos(0.523599))
+    (surface * unit) / (Math.pow(distancePlant, 2) * Math.cos(0.523599))
   );
   document.getElementById("results").innerHTML = nPlant;
 };
 
-const calculateReal = () => {
-  const surfaces = parseInt(document.getElementById("surface1").value);
-  const totalSurface = surfaces * showSelected();
-  const distancePlants = parseInt(
-    document.getElementById("distancePlant1").value
-  );
-  nPlant = Math.round(totalSurface / Math.pow(distancePlants, 2));
+const calculateReal = (btn) => {
+  const form = document.getElementById("formCalculate_2");
+  const formData = new FormData(form);
+  let jsonData = {};
+  for (var pair of formData.entries()) {
+    jsonData[pair[0]] = pair[1];
+  }
+
+  console.log(jsonData);
+  const surface = parseInt(jsonData.surface);
+  const distancePlant = parseInt(jsonData.distancePlant);
+  const unit = parseInt(jsonData.unit);
+
+  nPlant = Math.round((surface * unit) / Math.pow(distancePlant, 2));
   document.getElementById("results1").innerHTML = nPlant;
 };
 
-const calculateStreet = () => {
-  const surfaces = parseInt(document.getElementById("surface2").value);
-  const totalSurface = surfaces * showSelected();
-  const distanceRows = parseInt(document.getElementById("distanceRow").value);
-  const distancePlants = parseInt(
-    document.getElementById("distancePlant2").value
-  );
-  const nPlant = Math.round(totalSurface / (distanceRows * distancePlants));
+const calculateStreet = (btn) => {
+  const form = document.getElementById("formCalculate_3");
+  const formData = new FormData(form);
+  let jsonData = {};
+  for (var pair of formData.entries()) {
+    jsonData[pair[0]] = pair[1];
+  }
+
+  console.log(jsonData);
+  const surface = parseInt(jsonData.surface);
+  const distancePlant = parseInt(jsonData.distancePlant);
+  const distanceRow = parseInt(jsonData.distanceRow);
+  const unit = parseInt(jsonData.unit);
+
+  const nPlant = Math.round((surface * unit) / (distanceRow * distancePlant));
   document.getElementById("results2").innerHTML = nPlant;
 };
+
+/* const calculateStaggered = () => {
+  nPlant = Math.round(
+    (surface * unit) / (Math.pow(distancePlant, 2) * Math.cos(0.523599))
+  );
+  document.getElementById("results").innerHTML = nPlant;
+}; */
+
+/* const calculateReal = () => {
+  nPlant = Math.round((surface * unit) / Math.pow(distancePlant, 2));
+  document.getElementById("results1").innerHTML = nPlant;
+}; */
+
+/* const calculateStreet = () => {
+  const nPlant = Math.round((surface * unit) / (distanceRow * distancePlant));
+  document.getElementById("results2").innerHTML = nPlant;
+};
+ */
