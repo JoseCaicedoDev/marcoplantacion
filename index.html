@@ -64,17 +64,21 @@
             </select>
           </div>
         </div>
-        <label for="distancePlant">Distancia entre plantas</label>
-        <input
-          type="number"
-          class="inputsForm"
-          name="distancePlant"
-          placeholder="metros"
-          required
-        /><span>m</span><br />
-        <button class="btn" type="button" onclick="calculateStaggered(this)">
-          Calcular
-        </button>
+        <div class="description-items">
+          <label for="distancePlant">Distancia entre plantas</label>
+          <input
+            type="number"
+            class="inputsForm"
+            name="distancePlant"
+            placeholder="metros"
+            required
+          /><span>m</span>
+        </div>
+        <div class="card_btn">
+          <button class="btn" type="button" onclick="calculateStaggered(this)">
+            Calcular
+          </button>
+        </div>
       </form>
       <p>Número de Plantas: <span class="result" id="results"></span></p>
     </div>
@@ -110,10 +114,12 @@
           name="distancePlant"
           placeholder="metros"
           required
-        /><span>m</span><br />
-        <button class="btn" type="button" onclick="calculateReal()">
-          Calcular
-        </button>
+        /><span>m</span>
+        <div class="card_btn">
+          <button class="btn" type="button" onclick="calculateReal()">
+            Calcular
+          </button>
+        </div>
       </form>
       <p>Número de Plantas: <span class="result" id="results1"></span></p>
     </div>
@@ -158,10 +164,12 @@
           name="distancePlant"
           placeholder="metros"
           required
-        /><span>m</span><br />
-        <button class="btn" type="button" onclick="calculateStreet(this)">
-          Calcular
-        </button>
+        /><span>m</span>
+        <div class="card_btn">
+          <button class="btn" type="button" onclick="calculateStreet(this)">
+            Calcular
+          </button>
+        </div>
       </form>
       <p>Número de Plantas: <span class="result" id="results2"></span></p>
     </div>
