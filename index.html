@@ -40,138 +40,167 @@
     <h1>Marco de Plantación</h1>
     <div class="card">
       <h3>Cálculo de siembra Tresbolillo</h3>
-      <img
-        src="http://www.centroaceros.com/wp-content/uploads/2020/08/plantacion-banano.png"
-        alt=""
-      />
-      <p class="card__description">
-        Nº de Plantas = Superficie (m²) ⁄ (distancia ente plantas (m) x Cos 30º)
-      </p>
-      <form id="formCalculate_1" action="">
-        <div class="description-items">
-          <label for="surface">Superficie</label>
-          <div>
+      <div class="card_items">
+        <img
+          src="https://4.bp.blogspot.com/--g67OjOpvmQ/UJsPuAz46wI/AAAAAAAAAA0/gXbeWNweh0I/s320/Trazado+Triangulo+o+tres+bolillos.PNG"
+          alt="Marco de siembra tresbolillo"
+        />
+        <p class="card__description">
+          Nº de Plantas = Superficie (m²) ⁄ (distancia ente plantas (m) x Cos
+          30º)
+        </p>
+        <form id="formCalculate_1" action="">
+          <div class="description-items">
+            <label for="surface">Superficie</label>
+            <div>
+              <input
+                type="number"
+                class="inputsForm"
+                name="surface"
+                placeholder="Ej: 10000 m² ó 1 ha"
+                required
+              />
+              <select class="unit" name="unit">
+                <option value="1">m²</option>
+                <option value="10000">ha</option>
+              </select>
+            </div>
+          </div>
+          <div class="description-items">
+            <label for="distancePlant">Distancia entre plantas</label>
             <input
               type="number"
               class="inputsForm"
-              name="surface"
-              placeholder="Ej: 10000 m² ó 1 ha"
+              name="distancePlant"
+              placeholder="metros"
               required
-            />
-            <select class="unit" name="unit">
-              <option value="1">m²</option>
-              <option value="10000">ha</option>
-            </select>
+            /><span>m</span>
           </div>
-        </div>
-        <div class="description-items">
-          <label for="distancePlant">Distancia entre plantas</label>
-          <input
-            type="number"
-            class="inputsForm"
-            name="distancePlant"
-            placeholder="metros"
-            required
-          /><span>m</span>
-        </div>
-        <div class="card_btn">
-          <button class="btn" type="button" onclick="calculateStaggered(this)">
-            Calcular
-          </button>
-        </div>
-      </form>
-      <p>Número de Plantas: <span class="result" id="results"></span></p>
+          <div class="card_btn">
+            <button
+              class="btn"
+              type="button"
+              onclick="calculateStaggered(this)"
+            >
+              Calcular
+            </button>
+          </div>
+        </form>
+        <p class="result_card">
+          Número de Plantas: <span class="result" id="results"></span>
+        </p>
+      </div>
     </div>
 
     <div class="card">
       <h3>Cálculo de siembra Cuadrícula</h3>
-      <img
-        src="http://www.centroaceros.com/wp-content/uploads/2020/08/plantacion-banano.png"
-        alt=""
-      />
-      <p class="card__description">
-        Nº de Plantas = Superficie (m²) ⁄ distancia ente plantas (m)
-      </p>
-      <form id="formCalculate_2" action="">
-        <label for="surface1">Superficie</label>
-        <div class="description-items">
-          <input
-            type="number"
-            class="inputsForm"
-            name="surface"
-            placeholder="metros cuadrados"
-            required
-          />
-          <select class="unit" name="unit">
-            <option value="1">m²</option>
-            <option value="10000">ha</option>
-          </select>
-        </div>
-        <label for="distancePlant1">Distancia entre plantas</label>
-        <input
-          type="number"
-          class="inputsForm"
-          name="distancePlant"
-          placeholder="metros"
-          required
-        /><span>m</span>
-        <div class="card_btn">
-          <button class="btn" type="button" onclick="calculateReal()">
-            Calcular
-          </button>
-        </div>
-      </form>
-      <p>Número de Plantas: <span class="result" id="results1"></span></p>
+      <div class="card_items">
+        <img
+          src="https://4.bp.blogspot.com/-1AIPc9OGuPk/UJsHe6IqH1I/AAAAAAAAAAc/0hVJmFr2iaY/s1600/trazado+en+cuadro.PNG"
+          alt="Marco de siembra cuadrícula"
+        />
+        <p class="card__description">
+          Nº de Plantas = Superficie (m²) ⁄ distancia ente plantas (m)
+        </p>
+        <form id="formCalculate_2" action="">
+          <div class="description-items">
+            <label for="surface1">Superficie</label>
+            <div>
+              <input
+                type="number"
+                class="inputsForm"
+                name="surface"
+                placeholder="Ej: 10000 m² ó 1 ha"
+                required
+              />
+              <select class="unit" name="unit">
+                <option value="1">m²</option>
+                <option value="10000">ha</option>
+              </select>
+            </div>
+          </div>
+          <div class="description-items">
+            <label for="distancePlant1">Distancia entre plantas</label>
+            <input
+              type="number"
+              class="inputsForm"
+              name="distancePlant"
+              placeholder="metros"
+              required
+            /><span>m</span>
+          </div>
+          <div class="card_btn">
+            <button class="btn" type="button" onclick="calculateReal()">
+              Calcular
+            </button>
+          </div>
+        </form>
+        <p class="result_card">
+          Número de Plantas: <span class="result" id="results1"></span>
+        </p>
+      </div>
     </div>
 
     <div class="card">
       <h3>Cálculo de siembra Marco Calle</h3>
-      <img
-        src="http://www.centroaceros.com/wp-content/uploads/2020/08/plantacion-banano.png"
-        alt=""
-      />
-      <p class="card__description">
-        Nº de Plantas = Superficie (m²) ⁄ distancia ente plantas (m) x distancia
-        ente filas (m)
-      </p>
-      <form id="formCalculate_3" action="">
-        <label for="surface2">Superficie</label>
-        <div class="description-items">
-          <input
-            type="number"
-            class="inputsForm"
-            name="surface"
-            placeholder="metros cuadrados"
-            required
-          />
-          <select class="units_3" name="unit">
-            <option value="1">m²</option>
-            <option value="10000">ha</option>
-          </select>
-        </div>
-        <label for="distanceRow">Distancias entre filas</label>
-        <input
-          type="number"
-          class="inputsForm"
-          name="distanceRow"
-          placeholder="metros"
-          required
-        /><span>m</span><br />
-        <label for="distancePlant2">Distancias entre plantas</label>
-        <input
-          type="number"
-          class="inputsForm"
-          name="distancePlant"
-          placeholder="metros"
-          required
-        /><span>m</span>
-        <div class="card_btn">
-          <button class="btn" type="button" onclick="calculateStreet(this)">
-            Calcular
-          </button>
-        </div>
-      </form>
-      <p>Número de Plantas: <span class="result" id="results2"></span></p>
+      <div class="card_items">
+        <img
+          src="https://2.bp.blogspot.com/-5NKC_dGbqjk/UJsPu-D4GrI/AAAAAAAAAA8/LQrgazLkhzs/s400/Trazado+en+rect%C3%A1ngulo.PNG"
+          alt="Marco de siembra rectangular"
+        />
+        <p class="card__description">
+          Nº de Plantas = Superficie (m²) ⁄ distancia ente plantas (m) x
+          distancia ente filas (m)
+        </p>
+        <form id="formCalculate_3" action="">
+          <div class="description-items">
+            <label for="surface2">Superficie</label>
+            <div>
+              <input
+                type="number"
+                class="inputsForm"
+                name="surface"
+                placeholder="Ej: 10000 m² ó 1 ha"
+                required
+              />
+              <select class="units_3" name="unit">
+                <option value="1">m²</option>
+                <option value="10000">ha</option>
+              </select>
+            </div>
+          </div>
+          <div class="description-items">
+            <label for="distanceRow">Distancias entre filas</label>
+            <div>
+              <input
+                type="number"
+                class="inputsForm"
+                name="distanceRow"
+                placeholder="metros"
+                required
+              /><span>m</span>
+            </div>
+          </div>
+          <div class="description-items">
+            <label for="distancePlant2">Distancias entre plantas</label>
+            <input
+              type="number"
+              class="inputsForm"
+              name="distancePlant"
+              placeholder="metros"
+              required
+            /><span>m</span>
+          </div>
+          <div class="card_btn">
+            <button class="btn" type="button" onclick="calculateStreet(this)">
+              Calcular
+            </button>
+          </div>
+        </form>
+        <p class="result_card">
+          Número de Plantas: <span class="result" id="results2"></span>
+        </p>
+      </div>
     </div>
     <footer>
       <p>By</p>
