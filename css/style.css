@@ -18,10 +18,10 @@
   color: var(--color-black);
 }
 h1 {
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 700;
   text-align: center;
-  margin: 20px 0;
+  margin: 20px 0 30px;
 }
 h3 {
   font-size: 32px;
